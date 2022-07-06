@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <p>PLAYER FIRST NAME: {{ player.first_name }}</p>
+    <p>PLAYER LAST NAME: {{ player.last_name }}</p>
+    <p>PLAYER AGE: {{ player.age }}</p>
+    <p>PLAYER CLUB: {{ player.club }}</p>
+    <p><a href="{% url 'players:players-list-view' %}">Go to players list!</a> </p>
+
+{% endblock %}

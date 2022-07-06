@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for p in players %}
+        <p><a href="{% url 'players:player-detail-view' pk=p.pk %}">{{ p }}</a></p>
+    {% endfor %}
+    <a href="{% url 'players:players-list-view' %}">Go to player's list</a>
+{% endblock %}
